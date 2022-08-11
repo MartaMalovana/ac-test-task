@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container_advantages {
+    display: block;
+    background-color: #eff1f0;
+}
+.advantages {
+    display: block;
+    width: 1092px;
+    height: 42px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.advantages_list {
+    display: flex;
+    font-size: 14px;
+    color: #616366;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.advantages_item {
+    margin-right: 16px;
+};
+
+.advantages_item #phone {
+    color: black;
+}
+.container_navigation {
+    background-color: #0d7adc;
+    display: block;
+}
+
+.navigation {
+    width: 1092px;
+    height: 120px;
+    padding-top: 42px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.input_basket {
+    display: flex;
+    justify-content: space-between;
+
+}
+.search_input {
+    width: 304px;
+    height: 34px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-width: 0;
+}
+
+.search_button {
+    /* display: block; */
+    width: 38px;
+    height: 34px;
+    background-color: #0d7adc;
+    border-style: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;}
+
+button .fa-solid {
+    color: white;
+}
+
+.basket {
+    height: 34px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.basket_icon {
+    stroke: white;
+    width: 50px; 
+}
+ 
+.basket_label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu {
+    display: block;
+}
+
+.menu_list {
+    display: flex;
+    margin-top: 48px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu_item {
+    margin-right: 12px;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
