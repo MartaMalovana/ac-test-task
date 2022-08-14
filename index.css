@@ -290,9 +290,42 @@ button .fa-solid {
     width: 530px;
 }
 
-.title_container {
+article .block {
+    margin-top: 8px;
+}
+
+.first_title,
+.second_title,
+.third_title {
     height: 51px;
     background-color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 20px;
 }
 
+.block_first > .block_title{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.first_article,
+.second_article,
+.third_article {
+    display: none;
+    line-height: 1.4;
+
+}
+
+.block_article img {
+    width: 420px;
+    height: 280px;
+    margin: 16px;
+
+}
+
+.block_article span {
+    font-weight: bold;
+}
