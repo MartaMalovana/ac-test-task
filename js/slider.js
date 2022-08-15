@@ -1,4 +1,4 @@
-const photos = [
+const photos1 = [
     {
         'name': 'marquee-wedding',
         'alt': 'Waterproof Marquee for Wedding Parties',
@@ -16,30 +16,79 @@ const photos = [
         'alt': 'Secure waterproof marquees against wind and weather',
         'title': 'Secure waterproof marquees against wind and weather',
         'id': '3'
-    },
+    }
+];
+
+const photos2 = [
     {
         'name': 'pop-up-gazebo-large-event',
         'alt': 'Waterproof pop up gazebos for large events',
         'title': 'Waterproof pop up gazebos for large events',
-        'id': '4'
+        'id': '1'
     },
     {
         'name': 'pop-up-gazebo-rugby',
         'alt': 'Waterproof pop up gazebos for sport tournaments',
         'title': 'Waterproof pop up gazebos for sport tournaments',
-        'id': '5'
+        'id': '2'
     },
     {
         'name': 'pop-up-gazebo-equestrian-world-cup',
         'alt': 'Waterproof pop up gazebos for sporting events',
         'title': 'Waterproof pop up gazebos for sporting events',
-        'id': '6'
-    },
-
+        'id': '3'
+    }
 ];
 
-function Slider ({data = null, action}) {
-    const photo = document.querySelector('#slider_image');
+const photos3 = [
+    {
+        'name': 'garden-gazebo-autumn',
+        'alt': 'Waterproof garden gazebos for autumn',
+        'title': 'Waterproof garden gazebos for autumn',
+        'id': '1'
+    },
+    {
+        'name': 'garden-gazebo-winter',
+        'alt': 'Waterproof garden gazebos as shelter from the cold in winter',
+        'title': 'Waterproof garden gazebos as shelter from the cold in winter',
+        'id': '2'
+    },
+    {
+        'name': 'garden-gazebo-summer',
+        'alt': 'Waterproof garden gazebos to provide shade in summer',
+        'title': 'Waterproof garden gazebos to provide shade in summer',
+        'id': '3'
+    }
+];
+
+function Slider ({data = null, action, block}) {
+    let photo;
+    switch (block) {
+        case 1: 
+            photo = document.querySelector('#slider1_image');
+            break;
+        case 2:
+            photo = document.querySelector('#slider2_image');
+            break;
+        case 3:
+            photo = document.querySelector('#slider3_image');
+            break;
+    };
+
+    let photos = null;
+    switch (block) {
+        case 1: 
+            photos = photos1;
+            break;
+        case 2: 
+            photos = photos2;
+            break;
+        case 3: 
+            photos = photos3;
+            break;
+
+    };
+
     const dot1 = document.querySelector('#button1');
     const dot2 = document.querySelector('#button2');
     const dot3 = document.querySelector('#button3');

@@ -16,4 +16,4 @@ function Accordion (number) {
     };
 
     return block;
-}
+};
